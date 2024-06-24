@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Routes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>RUTAS INICIALES</h1>
+    
+    <div class="route post">
+        <a href=" /login">POST /login</a>
+        <p>Descripción: Mandar usuario y contraseña verifica existencia y devuelve token JWT.</p>
+    </div>
+           
+    <div class="route post">
+        <a href="/RegisterUser">POST /RegisterUser </a>
+        <p>Descripción: Se necesita datos del usuario para registrarlo en el sistema.</p>
+    </div>    
+
+    <div class="route post">
+        <a href="/regDevice">POST /regDevice SOLO PUEDE ACCEDER LOS DISPOSITIVOS</a>
+        <p>Descripción: el dispositivo debe mandar informacion necesaria para registrarse en la base de dato y este devuelve la logica para que funcione.</p>
+    </div>    
+
+    <div class="route post">
+        <a href="/accionar">POST /Accionar</a>
+        <p>Descripción: Manipula un topico del arduino requiere jwt y dato.</p>
+    </div>    
+        
+    <div class="route get">
+        <a href="/Historiador">GET /Historiador</a>
+        <p>Descripción: Obtiene historial de datos de un topico requiere jwt.</p>
+    </div>
+
+    <div class="route get">
+        <a href="/ListarDispo">GET /ListarDispo</a>
+        <p>Descripción: Lista dispositivos asociados a un usuario requiere jwt.</p>
+    </div>
+
+</body>
+</html>

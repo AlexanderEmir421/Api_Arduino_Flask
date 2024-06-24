@@ -1,0 +1,11 @@
+.route {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.get {
+    background-color: rgb(0, 255, 0);
+}
+.post {
+    background-color: rgb(255, 38, 0);
+}
